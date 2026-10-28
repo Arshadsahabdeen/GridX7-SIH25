@@ -61,13 +61,13 @@ Firebase Realtime Database
 1. Clone the repository:
 
    ```bash
-   git clone <YOUR_REPOSITORY_URL>
+   git clone https://github.com/Arshadsahabdeen/GridX7-SIH25.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd GridX7
+   cd GridX7-SIH25
    ```
 
 3. Install dependencies:
@@ -76,7 +76,14 @@ Firebase Realtime Database
    flutter pub get
    ```
 
-4. Configure your Firebase project and add the appropriate platform configuration files.
+4. Connect your own Firebase project. The Firebase config files are not committed, so generate them with the FlutterFire CLI:
+
+   ```bash
+   dart pub global activate flutterfire_cli
+   flutterfire configure
+   ```
+
+   This creates `lib/firebase_options.dart` and `android/app/google-services.json` (both git-ignored).
 
 5. Configure the Firebase Realtime Database connection and required environment settings.
 
